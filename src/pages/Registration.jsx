@@ -36,7 +36,7 @@ export default function Registration() {
                 emailOrPhone:formdata.emailOrPhone,
                 country:formdata.country
             }
-            axios.post("http://localhost:3000/users",users).then((res)=>{
+            axios.post("https://razorpay-clone-u35c.onrender.com/users",users).then((res)=>{
                 console.log("saved",res.data);
                 alert("Registered successfuly")
                 navigate('/login');

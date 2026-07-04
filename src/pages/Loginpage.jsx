@@ -38,7 +38,7 @@ export default function Loginpage() {
             if(Object.keys(newErrors).length===0){
                 // getting data from db.json
                try{
-                    let res=await axios.get("http://localhost:3000/users")
+                    let res=await axios.get("https://razorpay-clone-u35c.onrender.com/users")
                     //checking the user from db
                     const user=res.data.find((u)=>{
                           return  u.emailOrPhone===formdata.emailOrPhone

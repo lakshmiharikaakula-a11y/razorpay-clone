@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+section {
+  width: 90%;
+  margin: 80px auto;
+}
+.financehighlight{
+    color:green;
+}
+section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  max-width: 700px;
+  line-height: 1.2;
+}
+section p {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-top: 15px;
+}
+
+.financenav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+.financenav-links li button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #f1f5f9;
+  color: #334155;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.financenav-links li button:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+}
+.financenav-links li button:focus {
+  background-color: #2563eb;
+  color: white;
+}
+
+.financenav-links li button.active {
+  background-color: #2563eb;
+  color: white;
+}
+.platform-box{
+    background:#ffffff;
+    border-radius:24px;
+    padding:40px;
+    margin:40px 40px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+.section-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:20px;
+}
+.section-header h2{
+    font-size:40px;
+    font-weight:700;
+    margin:0;
+}
+.new-badge{
+    background:#111827;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+.carousel-container{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    margin:10px;
+    position:relative;
+}
+.cards {
+  display: flex;
+  overflow:hidden;
+  gap: 20px;
+  width:100%;
+  margin-top:40px;
+}
+.card {
+     flex: 0 0 calc((100% - (3 * 20px)) / 4); /* 4 cards per row */
+    width:280px;
+    height:380px;
+    border-radius:24px;
+    overflow:hidden;
+    cursor:pointer;
+    position:relative;
+    flex-shrink:0;
+}
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+}
+.card-content{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-70px;
+    padding:24px;
+    background:linear-gradient( to top,rgba(0,0,0,0.9),rgba(23, 22, 22, 0.1));
+    color:white;
+    transition:all 0.4s ease;
+}
+.card-content h3{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:12px;}
+.card-content p{
+    color:rgb(209, 198, 198);
+    line-height:1.6;
+    margin-bottom:16px;
+}
+.btns{
+    display:flex;
+    gap:12px;
+}
+.btns button:first-child{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.btns button:last-child{
+    background:transparent;
+    border:none;
+    color:#2563eb;
+    cursor:pointer;
+}
+.card:hover .card-content{
+    bottom:0px;
+    /* transform:translateY(-8px); */
+}
+.finance-leftarrow{
+    position:absolute;
+    left:-24px;
+    top:40%;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    cursor:pointer;
+    z-index:10;
+}
+.finance-rightarrow{
+    position:absolute;
+    right:-10px;
+    top:40%;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    cursor:pointer;
+    z-index:10;
+}
+.left-arrow:hover,
+.right-arrow:hover{
+    background:#2563eb;
+    color:white;
+}
+.left-arrow i,
+.right-arrow i{
+    font-size:18px;
+}
+@media (max-width:1024px){
+    .cards{
+    gap:0;
+  }
+  .card{
+     flex:0 0 25%;
+      height:auto;
+    background:white;
+    border:1px solid grey;
+    opacity:0.3px;
+    border-radius:0px;
+    padding-bottom:3px;
+  }
+   .card-content{
+    position:static;
+    background:white;
+    color:black;
+    padding:12px;
+     display:flex;
+  flex-direction:column;
+  }
+   .card-content h3{
+    color:#465881;
+    height:60px;
+  }
+
+  .card-content p{
+    color:#64748b;
+     height:180px;
+     padding-top:5px;
+  }
+  .btns{
+     margin-top:auto;
+     padding-right:2px;
+     padding-left:2px;
+  }
+  .mobile-carousel{
+  width:100%;
+}
+.mobile-carousel h2{
+  min-height:80px;
+  margin-top:20px;
+  padding:20px 24px;
+  display:flex;
+  align-items:center;
+  color:rgb(22, 21, 21);
+  font-size:30px;
+  font-weight:600;
+  line-height:1.4;
+  width:100%;
+  background-color:rgb(238, 232, 232);
+}
+  .btns button{
+    font-size:20px;
+  }
+  .mobile-arrows{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.mobile-leftarrow,
+.mobile-rightarrow{
+  width:40px;
+  height:40px;
+  border:none;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  cursor:pointer;
+}
+.mobile-leftarrow i,
+.mobile-rightarrow i{
+  font-size:16px;
+}
+.cards{
+  margin-top:0;
+}
+   
+}
+@media (max-width: 768px) {
+   .cards{
+    gap:0;
+  }
+  .card{
+     flex:0 0 25%;
+      height:auto;
+    background:white;
+    border:1px solid grey;
+    opacity:0.3px;
+    border-radius:0px;
+    padding-bottom:3px;
+  }
+   .card-content{
+    position:static;
+    background:white;
+    color:black;
+    padding:12px;
+     display:flex;
+  flex-direction:column;
+  }
+   .card-content h3{
+    color:#465881;
+    height:60px;
+  }
+
+  .card-content p{
+    color:#64748b;
+     height:180px;
+     padding-top:5px;
+  }
+  .btns{
+     margin-top:auto;
+     padding-right:2px;
+     padding-left:2px;
+  }
+  .btns button{
+    font-size:20px;
+  }
+  .mobile-arrows{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.mobile-leftarrow,
+.mobile-rightarrow{
+  width:40px;
+  height:40px;
+  border:none;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  cursor:pointer;
+}
+.mobile-leftarrow i,
+.mobile-rightarrow i{
+  font-size:16px;
+}
+.mobile-carousel h2{
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content: flex-start;
+  padding-left:30px;
+  align-items: center;
+  background-color: #394b72;
+  color:#f1f5f9;
+  font-size:20px;
+  margin-top:10px;
+
+}
+.cards{
+  margin-top:0;
+}
+}
+@media (max-width:425px){
+
+  .cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0;
+  }
+
+  .card{
+    flex:0 0 50%;
+  }
+
+  .mobile-arrows{
+    display:none;
+  }
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+}

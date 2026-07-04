@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.reg-container{
+    width:100%;
+    display:flex;
+    min-height:100vh;
+}
+.reg-left{
+    flex:2;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:100px 80px;
+     background: linear-gradient(135deg, white, green);
+  background-size: 200% 200%;
+   
+}
+.razorleft-logo{
+    display:flex;
+}
+.razorleft-logo img{
+    width:20px;
+    height:20px;
+}
+.regleft-content{
+    animation:bgchange 2s infinite ease-in;
+    color:rgb(6, 52, 6)
+}
+@keyframes bgchange{
+    0%{
+        color:rgb(6, 52, 6);
+    }
+    50%{
+         color:green
+    }
+    100%{
+         color:rgb(6, 52, 6);
+    }
+
+}
+.regleft-content h3{
+    padding-top:20px;
+}
+.reg-right{
+    flex:1;
+   /* border-left: 2px solid grey; */
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+   padding:80px 50px;
+    background-color: #fff;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+form{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.reg-right input,
+.reg-right select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.reg-right button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reg-right button:first-of-type {
+  background: #0d47a1;
+  color: #fff;
+}
+
+.reg-right button:first-of-type:hover {
+  background: #08306b;
+}
+.reg-right button:last-of-type {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.reg-right button:last-of-type:hover {
+  background: #f0f0f0;
+}
+.reg-right .divider{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+     margin: 15px 0;
+     width: 100%;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.divider span {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+.reg-right img{
+     width:50px;
+    height:50px;
+}
+form p{
+    text-align: center;
+    width:100%;
+    color:grey;
+    padding:5px;
+}
+form p span{
+    color:rgb(76, 76, 135);
+
+}
+form p span:hover{
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .reg-container {
+    flex-direction: column;
+  }
+  .reg-left, .reg-right {
+    flex: none;
+    width: 100%;
+    padding: 30px 20px;
+  }
+}

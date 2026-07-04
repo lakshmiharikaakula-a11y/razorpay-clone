@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "emailOrPhone": "harika@gmail.com",
+      "country": "India",
+      "id": "Jhg6mCaEgQM"
+    },
+    {
+      "emailOrPhone": "harika@gmail.com",
+      "country": "India",
+      "id": "vwQcNR9SFX8"
+    },
+    {
+      "emailOrPhone": "harika@gmail.com",
+      "country": "USA",
+      "id": "e1SDI77m0IU"
+    },
+    {
+      "emailOrPhone": "harika@gmail.com",
+      "country": "India",
+      "id": "ByCBh4j0q0c"
+    },
+    {
+      "emailOrPhone": "harika@gmail.com",
+      "country": "India",
+      "id": "3Cb6RbnQZxQ"
+    },
+    {
+      "emailOrPhone": "lakshmiharikaakula@gmail.com",
+      "country": "India",
+      "id": "BIsQ7gv2K80"
+    },
+    {
+      "emailOrPhone": "lakshmiharikaakula@gmail.com",
+      "country": "India",
+      "id": "7hWMGzmDd1s"
+    },
+    {
+      "emailOrPhone": "lakshmiharikaakula@gmail.com",
+      "country": "India",
+      "id": "TRm1kJ-GpdE"
+    },
+    {
+      "emailOrPhone": "abc@gmail.com",
+      "country": "India",
+      "id": "_mtxHgC_b9Y"
+    },
+    {
+      "emailOrPhone": "abc@gmail.com",
+      "country": "India",
+      "id": "UwzW5-cbSvw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

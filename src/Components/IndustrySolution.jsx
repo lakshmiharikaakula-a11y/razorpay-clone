@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { industryData } from '../data/industrydata';
+import { industryData } from '../data/Industrydata';
 import '../styles/IndustrySolution.css'
 export default function IndustrySolution() {
   let industrytabs=["E-Commerce","Education","BFSI","SaaS","Freelancer"]

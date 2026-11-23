@@ -62,7 +62,7 @@ export default function Loginpage() {
           <div className='reg-container'>
               <div className="reg-left">
                   <div className="razorleft-logo">
-                      <img src={razorpay} alt="logo"/>
+                      <img src={razorpay} alt="logo"/>{/* Git branch practice */}
                       <h3>Razorpay</h3>
                   </div>
                   <div className="regleft-content">
